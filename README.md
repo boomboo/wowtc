@@ -1,1 +1,1 @@
-# wowtc
+# World of Warcraft Theorycrafting Resource
