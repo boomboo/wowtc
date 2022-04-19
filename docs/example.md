@@ -1,6 +1,6 @@
 ---
 title: Example
-description: Short description
+description: Example post or article about something.
 authors:
     - Bloodmallet(EU)
 date: 2022-04-19
@@ -21,6 +21,12 @@ $$
 1 + 1 = 2
 $$
 
+## Reproducibility
+Detailed steps to take to reproduce and confirm the described effects of the page.
+
+1. Talent selection
+2. Order of spells
+3. Expected result
 
 ## Exceptions
 List of exceptions. E.g. spell-ids
