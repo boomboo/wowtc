@@ -9,7 +9,7 @@ $$
 
 ## K Value
 
-K is a dynamically changing value that depends on the mob attacking the player and was added in BFA.
+K is a dynamically changing value that depends on the mob attacking the player and was static before BFA.
 
 | Difficulty | K Value|
 | --- | --- | 
