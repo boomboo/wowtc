@@ -1,4 +1,4 @@
-#Parry
+# Parry
 
 Both Parry and Parry work in the same way and characters by default will have 3% chance to do either, however this is reduced by 1.5% for each level difference. Against a target 1 level higher a player will have 1.5% of each, and 2 levels higher (Dungeon Bosses) = 0%, and level 63 (Raid Bosses) = -1.5%.
 
@@ -25,7 +25,7 @@ $$
 At level 60, P is **138.75176305** and D is **39**.
 
 
-##Class Differences
+## Class Differences
 
 Different classes can have different values from the standard v and h.
 
