@@ -41,20 +41,20 @@ First a few caveats and notes:
 Regardless we're going to only look at how stats on items change in the range of item levels used through-out the current expansion tiers (ilvl 200 to 330).
 
 ### Budget (**B**)
-Budget as a function of item level has the form of `B(x)=a*1.15^1/15*x`, in fact almost every scaling number in the game is driven by that exponential expression (yes even **K**).
+Budget as a function of item level has the form of \(B(x)=a*1.15^{\frac{1}{15}*x}\), in fact almost every scaling number in the game is driven by that exponential expression (yes even **K**).
 - What the above means is that every 15 item levels the budget increases by **exactly** 15%, eg. our 'Super Sword' with a budget of 307.97915649 (at item level 300) would have `307.97915649*1.15=354.1760299635` at item level 315 (that doesn't mean that 13 item levels is exactly 13%, it's actually ~12.87%).
 
 ### Stat Multipliers
 **Primary** stats (Agility, Strength, Intellect) have a constant multiplier of 1. Which means your primary stats on an item increase by 15% every 15 item levels like budget.
 
 **Secondary** stats have a multiplier that depends on item level, it isn't clear at first glance why the values decrease the way they do. However, working backwards and noticing that generally secondary stats progress linearly with item level it becomes clear that secondary stat multiplier is driven by a function that when multiplied by budget yields a linear expression.
-What function when multiplied by `B(x)` produces `bx+c`, simply `(bx+c)/B(x)` and that fits the multiplier data exactly, so in a roundabout way we get that secondaries are driven by `S(x)=bx+c`.
+What function when multiplied by `B(x)` produces `bx+c`, simply \(\frac{bx+c}{B(x)}\) and that fits the multiplier data exactly, so in a roundabout way we get that secondaries are driven by `S(x)=bx+c`.
 Which means every item level, you get exactly `b` secondary stats regardless of what item level it is. In the case of the 'Super Sword' we don't care what item level it is, for every item level it gains exactly `b` secondaries.
 An additional distinction is that jewelry uses a different linear curve than other items.
 
 **Stamina** multiplier is also a function of item level, unlike secondaries however the multiplier increases linearly with item level and we get `H(x)=(bx+c)*B(x)` as the function for the amount of stamina on an item.
 This is harder to quantify, but essentially the amount of stamina you gain per item level both depends on how much stamina the item has (exponential) and also increases with item level it also means you gain more stamina throughout the progression than you do primary stat.
 
-**Armor** doesn't use budget, instead the function that drives it is of the form `a*1.15^1/15*x+b`, which is very close to a pure exponential.
+**Armor** doesn't use budget, instead the function that drives it is of the form \(a*1.15^{\frac{1}{15}*x}+b\), which is very close to a pure exponential.
 
-**Effects** trinket like effects have their own unique scaling which is similar to stamina in that they are linear * exponential, ie. `(bx+c)*1.15^1/15x`.
+**Effects** trinket like effects have their own unique scaling which is similar to stamina in that they are linear * exponential, ie. \((bx+c)*1.15^{\frac{1}{15}*x}\).
